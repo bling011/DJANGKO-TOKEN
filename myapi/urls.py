@@ -18,8 +18,14 @@ from django.contrib import admin
 from django.urls import path
 from rest_framework.authtoken.views import obtain_auth_token
 from core.views import SecureHelloView
+from django.http import HttpResponse
+from django.urls import path
+
+def home(request):
+    return HttpResponse("Hello, this is the Django home page!")
 
 urlpatterns = [
+    path('', home),
     path('admin/', admin.site.urls),
     path('api-token-auth/', obtain_auth_token),
     path('secure-hello/', SecureHelloView.as_view()),
