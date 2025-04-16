@@ -2,8 +2,6 @@ from pathlib import Path
 import os
 import dj_database_url
 
-import dj_database_url
-
 DATABASES = {
     'default': dj_database_url.config(default='postgresql://fast_api_app_user:RiL7fhtm42Uiel2P2LyCGvt5jYzsBLq0@dpg-cvv2f215pdvs73bv874g-a/fast_api_app')
 }
@@ -128,5 +126,6 @@ STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
+
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
