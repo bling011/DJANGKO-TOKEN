@@ -2,10 +2,10 @@ from pathlib import Path
 import os
 import dj_database_url
 
+import dj_database_url
+
 DATABASES = {
-    'default': dj_database_url.config(
-        default=os.environ.get('DATABASE_URL')
-    )
+    'default': dj_database_url.config(default='postgresql://fast_api_app_user:RiL7fhtm42Uiel2P2LyCGvt5jYzsBLq0@dpg-cvv2f215pdvs73bv874g-a/fast_api_app')
 }
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
