@@ -25,7 +25,8 @@ SECRET_KEY = 'django-insecure-y5iz&o#dua$p--5tx+u&(7qc==+tke#u1=+t(lbb4*u0e5b8=p
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['djangko-token.onrender.com', 'localhost', '127.0.0.1']
+
 
 
 # Application definition
@@ -91,6 +92,7 @@ REST_FRAMEWORK = {
         'rest_framework.permissions.IsAuthenticated',
     ],
 }
+
 
 
 
